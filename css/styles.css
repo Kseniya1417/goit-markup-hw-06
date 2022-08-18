@@ -419,7 +419,10 @@ transition-property: background-color;
     margin-bottom: 12px;
 }
 .footer-submit-field{
-    margin-left: 93px;
+    margin-left:auto;
+}
+.footer-submit-form{
+    display: flex;
 }
 /* .team-social-icon:hover{
     background-color: var(--third-color);
@@ -494,6 +497,7 @@ transition-property: fill;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
    /* background-position: center; */
  transition-property: border-color;   
 }
@@ -754,7 +758,7 @@ transition-property: color;
 .modal{
     position: absolute;
     width: 528px;
-    min-height: 581px;
+    height: 581px;
     background-color: #FFFFFF;
     border-radius: 4px;
     top: 50%;
@@ -775,6 +779,10 @@ transition-property: color;
     /* align-items: center;
     justify-content: center;
     display: flex; */
+}
+.modal-checkbox{
+    position: relative;
+        overflow: hidden;
 }
 .modal-close:hover,
 .modal-close:focus{
@@ -850,6 +858,8 @@ transition-property: color;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
+    display: block;
+    margin-bottom: 4px;
 }
 .modal-agreement{
     font-weight: 400;
@@ -867,7 +877,6 @@ transition-property: color;
         color: #2196F3;
 }
 .modal-btn{
-    position: absolute;
     font-size: 16px;
         line-height: 30px;
         display: flex;
@@ -901,6 +910,7 @@ transition-property: color;
     border-radius: 4px;
     resize: none;
     padding: 12px 16px;
+    display: block;
     }
 .icon-person-black,
 .icon-phone-black,
@@ -940,6 +950,14 @@ transition-property: color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .submit-btn{
         width: 200px;
@@ -956,9 +974,10 @@ transition-property: color;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     padding: 5px 15px;
+    margin-left: 12px;
     }
 .icon-send{
-    margin-left: 15px;
+    margin-left: 10px;
     
 }
 /*color синій logo 2196F3*/
