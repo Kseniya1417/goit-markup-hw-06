@@ -782,7 +782,7 @@ transition-property: color;
 }
 .modal-checkbox{
     position: relative;
-        overflow: hidden;
+    overflow: hidden;
 }
 .modal-close:hover,
 .modal-close:focus{
