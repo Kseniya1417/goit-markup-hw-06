@@ -781,9 +781,15 @@ transition-property: color;
     display: flex; */
 }
 .modal-checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position:absolute;
+}
+/* .modal-checkbox{
     position: relative;
     overflow: hidden;
-}
+} */
 .modal-close:hover,
 .modal-close:focus{
     fill:#2196F3;
@@ -869,6 +875,8 @@ transition-property: color;
         line-height: 24px;
         letter-spacing: 0.03em;
         color: #757575;
+        display: flex;
+        align-items: center;
 }
 .modal-link{
     font-weight: 400;
@@ -892,15 +900,61 @@ transition-property: color;
         border-radius: 4px;
         width: 200px;
         height: 50px;
-        top: 50%;
-        left: 50%;
-        transform: translate(60%, 50%) scale(1);  
         border-color:#188CE8;
+        margin: auto;
+        margin-top: 30px;
     }
-.user-agreement{
-    position: relative;
-    text-align: center;
+        .user-agreement {
+        position: relative;
+        text-align: center;
+        }
+
+.modal-agreement span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #303030;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.label {
+    display: inline-block;
+  
+}
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: tomato;
+    background: #FFFFFF;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+.modal-checkbox:checked + .checkbox-icon {
+    background-image: url('../images/vector.svg');
+    background-color: #2196F3;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196F3;
+    
+}
+/* .modal-checkbox:checked + .checkbox-icon {
+background-color: #2196F3;
+border: none;
+} */
+/* .modal-checkbox:checked + .modal-agreement .icon-vector{
+    background-color: #2196F3;
+    border: none;
+} */
+.icon-vector{
+    fill: transparent;
+}
+/* .custom-checkbox{
+    position: absolute;
+    z-index: -1
+    opacity: 0;
+} */
 .modal-text{
     width: 100%;
     height: 120px;
@@ -914,6 +968,7 @@ transition-property: color;
     resize: none;
     padding: 12px 16px;
     display: block;
+    margin-bottom: 20px;
     }
 .icon-person-black,
 .icon-phone-black,

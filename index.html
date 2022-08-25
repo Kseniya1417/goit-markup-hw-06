@@ -496,28 +496,22 @@
               placeholder="Введіть текст"
               class="modal-text modal-input"
             ></textarea>
-
-            <!-- <input
-              type="text"
-              class="modal-input"
-              name="user-text"
-              placeholder="Введіть текст"
-              required
-            /> -->
           </div>
           <div class="user-agreement">
-            <input
-              type="checkbox"
-              class="modal-checkbox"
-              name="user-agreement"
-              id="user-agreement"
-            />
-            <label for="user-agreement" class="modal-agreement"
-              >Погоджуюся з розсилкою та приймаю</label
+            <label class="label">
+              <input
+                type="checkbox"
+                class="modal-checkbox custom-checkbox"
+                name="user-agreement"
+                id="user-agreement"
+                value="true"
+              />
+              <span class="checkbox-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="link modal-link">Умови угоди</a></label
             >
-            <a href="" class="link modal-link">Умови угоди</a>
-            <button class="modal-btn" type="submit">Відправити</button>
           </div>
+          <button class="modal-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
